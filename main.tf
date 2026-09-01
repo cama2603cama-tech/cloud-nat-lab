@@ -137,8 +137,9 @@ resource "google_compute_instance" "vm_b2" {
 
 # 8. Bucket
 resource "google_storage_bucket" "my_bucket" {
-  name     = "gcp-terraform-secure-bucket-${var.project_id}"
-  location = "US" # Multi-región que une todo EEUU
+  name          = "gcp-terraform-secure-bucket-${var.project_id}"
+  location      = "US" # Multi-región que une todo EEUU
+  force_destroy = true
 
   public_access_prevention = "enforced"
 }
