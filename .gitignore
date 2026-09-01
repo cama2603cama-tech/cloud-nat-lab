@@ -1,0 +1,38 @@
+# Credenciales y secretos locales
+secret.json
+*.json
+#*.tfvars
+
+# Directorio de caché de Terraform (plugins locales)
+.terraform/
+
+# Archivos de estado .tfstate
+#*.tfstate
+#*.tfstate.*
+
+# Archivos de logs durante Crash
+#crash.log
+#crash.*.log
+
+#Por lo general, estos archivos contienen información sensible,
+#como contraseñas, claves de API y otros secretos que no deben
+#compartirse públicamente. Por lo tanto, es una buena práctica
+#incluirlos en el archivo .gitignore para evitar que se suban al
+#repositorio. Pero en esta ocasion los vamos a subir para que el
+#laboratorio funcione correctamente.
+#*.tfvars
+#*.tfvars.json
+
+# Archivos de configuración de Terraform que se utilizan para
+# anular la configuración de los módulos o recursos.
+#override.tf
+#override.tf.json
+#*_override.tf
+#*_override.tf.json
+
+# Archivos de bloqueo de estado de Terraform
+#.terraform.tfstate.lock.info
+
+# Archivos de configuracion CLI
+#.terraformrc
+#terraform.rc
